@@ -298,7 +298,7 @@ templates['operation'] = template({"1":function(container,depth0,helpers,partial
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || helpers.helperMissing).call(alias1,(depth0 != null ? depth0.successCode : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
     + ")</h4>\n              "
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.successDescription : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n            <p><span class=\"model-signature\" /></p>\n            <br/>\n            <div class=\"response-content-type\" />\n            </div>\n";
+    + "\n            <p><span class=\"entity-signature\" /></p>\n            <br/>\n            <div class=\"response-content-type\" />\n            </div>\n";
 },"10":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -438,7 +438,7 @@ templates['param'] = template({"1":function(container,depth0,helpers,partials,da
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "</td>\n<td>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.paramType : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td>\n	<span class=\"model-signature\"></span>\n</td>\n";
+    + "</td>\n<td>\n	<span class=\"entity-signature\"></span>\n</td>\n";
 },"useData":true});
 templates['param_list'] = template({"1":function(container,depth0,helpers,partials,data) {
     return " required";
@@ -501,7 +501,7 @@ templates['param_list'] = template({"1":function(container,depth0,helpers,partia
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.required : depth0),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</td>\n<td>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.paramType : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td><span class=\"model-signature\"></span></td>\n";
+    + "</td>\n<td><span class=\"entity-signature\"></span></td>\n";
 },"useData":true});
 templates['param_readonly'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
@@ -538,7 +538,7 @@ templates['param_readonly'] = template({"1":function(container,depth0,helpers,pa
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "</td>\n<td>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.paramType : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td><span class=\"model-signature\"></span></td>\n";
+    + "</td>\n<td><span class=\"entity-signature\"></span></td>\n";
 },"useData":true});
 templates['param_readonly_required'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
@@ -575,7 +575,7 @@ templates['param_readonly_required'] = template({"1":function(container,depth0,h
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "</td>\n<td>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.paramType : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td><span class=\"model-signature\"></span></td>\n";
+    + "</td>\n<td><span class=\"entity-signature\"></span></td>\n";
 },"useData":true});
 templates['param_required'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -642,7 +642,7 @@ templates['param_required'] = template({"1":function(container,depth0,helpers,pa
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "</span></strong>\n</td>\n<td>"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.paramType : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td><span class=\"model-signature\"></span></td>\n";
+    + "</td>\n<td><span class=\"entity-signature\"></span></td>\n";
 },"useData":true});
 templates['parameter_content_type'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -793,7 +793,7 @@ templates['status_code'] = template({"1":function(container,depth0,helpers,parti
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.code : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
     + "</td>\n<td class=\"markdown\">"
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,(depth0 != null ? depth0.message : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</td>\n<td width='50%'><span class=\"model-signature\" /></td>\n<td class=\"headers\">\n  <table>\n    <tbody>\n"
+    + "</td>\n<td width='50%'><span class=\"entity-signature\" /></td>\n<td class=\"headers\">\n  <table>\n    <tbody>\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.headers : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </tbody>\n  </table>\n</td>";
 },"useData":true});
@@ -3392,7 +3392,7 @@ var _ = {
 };
 var auth = require('./auth');
 var helpers = require('./helpers');
-var Model = require('./types/model');
+var Model = require('./types/entity');
 var Operation = require('./types/operation');
 var OperationGroup = require('./types/operationGroup');
 var Resolver = require('./resolver');
@@ -6093,7 +6093,7 @@ SwaggerSpecConverter.prototype.declaration = function(obj, swagger) {
     swagger.produces = obj.produces;
   }
 
-  // build a mapping of id to name for 1.0 model resolutions
+  // build a mapping of id to name for 1.0 entity resolutions
   if(_.isObject(obj)) {
     for(name in obj.models) {
       var existingModel = obj.models[name];
@@ -6437,10 +6437,10 @@ SwaggerSpecConverter.prototype.toJsonSchema = function(source) {
   } else if(lcType === 'void' || lcType === '') {
     {return {};}
   } else if (this.modelMap[source.type]) {
-    // If this a model using `type` instead of `$ref`, that's fine.
+    // If this a entity using `type` instead of `$ref`, that's fine.
     return {$ref: '#/definitions/' + this.modelMap[source.type]};
   } else {
-    // Unknown model type or 'object', pass it along.
+    // Unknown entity type or 'object', pass it along.
     return {type: source.type};
   }
 };
@@ -6699,7 +6699,7 @@ var _ = {
   isObject: require('lodash-compat/lang/isObject')
 };
 var helpers = require('../helpers');
-var Model = require('./model');
+var Model = require('./entity');
 var SwaggerHttp = require('../http');
 var Q = require('q');
 
@@ -6924,7 +6924,7 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
       this.successResponse = {};
       successResponse = this.successResponse[defaultResponseCode] = resolvedModel;
     } else if (!response.schema.type || response.schema.type === 'object' || response.schema.type === 'array') {
-      // Inline model
+      // Inline entity
       this.successResponse = {};
       successResponse = this.successResponse[defaultResponseCode] = new Model(undefined, response.schema || {}, this.models, parent.modelPropertyMacro);
     } else {
@@ -7039,7 +7039,7 @@ Operation.prototype.getType = function (param) {
 };
 
 /**
- * adds an inline schema (model) to a hash, where we can ref it later
+ * adds an inline schema (entity) to a hash, where we can ref it later
  * @param {object} schema a schema
  * @return {number} the ID of the schema being added, or null
  **/
@@ -7048,15 +7048,15 @@ Operation.prototype.addInlineModel = function (schema) {
   var model = this.resolveModel(schema, {});
   if(model) {
     this.inlineModels.push(model);
-    return 'Inline Model '+len; // return string ref of the inline model (used with #getInlineModel)
+    return 'Inline Model '+len; // return string ref of the inline entity (used with #getInlineModel)
   }
   return null; // report errors?
 };
 
 /**
- * gets the internal ref to an inline model
- * @param {string} inline_str a string reference to an inline model
- * @return {Model} the model being referenced. Or null
+ * gets the internal ref to an inline entity
+ * @param {string} inline_str a string reference to an inline entity
+ * @return {Model} the entity being referenced. Or null
  **/
 Operation.prototype.getInlineModel = function(inlineStr) {
   if(/^Inline Model \d+$/.test(inlineStr)) {
@@ -7119,7 +7119,7 @@ Operation.prototype.getModelSignature = function (type, definitions) {
     isPrimitive = true;
 
   } else if (definitions[type]){
-    // a model def exists?
+    // a entity def exists?
     type = definitions[type]; /* Model */
     isPrimitive = false;
 
@@ -21944,7 +21944,7 @@ window.SwaggerUi = Backbone.Router.extend({
       $(this).html(marked($(this).html()));
     });
 
-    $('.propDesc', '.model-signature .description').each(function () {
+    $('.propDesc', '.entity-signature .description').each(function () {
       $(this).html(marked($(this).html())).addClass('markdown');
     });
   }
@@ -23243,10 +23243,10 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
         router: this.router,
         tagName: 'div'
       });
-      $('.model-signature', $(this.el)).append(responseSignatureView.render().el);
+      $('.entity-signature', $(this.el)).append(responseSignatureView.render().el);
     } else {
       this.model.responseClassSignature = 'string';
-      $('.model-signature', $(this.el)).html(this.model.type);
+      $('.entity-signature', $(this.el)).html(this.model.type);
     }
     contentTypeModel = {
       isParam: false
@@ -24000,10 +24000,10 @@ SwaggerUi.Views.ParameterView = Backbone.View.extend({
 
     if (sampleJSON) {
       signatureView = new SwaggerUi.Views.SignatureView({model: signatureModel, tagName: 'div'});
-      $('.model-signature', $(this.el)).append(signatureView.render().el);
+      $('.entity-signature', $(this.el)).append(signatureView.render().el);
     }
     else {
-      $('.model-signature', $(this.el)).html(this.model.signature);
+      $('.entity-signature', $(this.el)).html(this.model.signature);
     }
 
     var isParam = false;
@@ -24718,7 +24718,7 @@ SwaggerUi.partials.signature = (function () {
         isPrimitive = true;
 
       } else if (definitions[type]){
-        // a model def exists?
+        // a entity def exists?
         type = definitions[type]; /* Model */
         isPrimitive = false;
 
@@ -25056,11 +25056,11 @@ SwaggerUi.partials.signature = (function () {
     var modelType = simpleRef($ref);
     var model = models[modelType] || {};
     var type = model.definition && model.definition.type ? model.definition.type : 'object';
-    // If model definition xml name is present, then that will be preferred over model name. This is the case of preferring XmlElement name over XmlRootElement name if XmlElement name is provided | https://github.com/swagger-api/swagger-ui/issues/2577
+    // If entity definition xml name is present, then that will be preferred over entity name. This is the case of preferring XmlElement name over XmlRootElement name if XmlElement name is provided | https://github.com/swagger-api/swagger-ui/issues/2577
     if(model.definition && model.definition.xml && model.definition.xml.name) {
         name = name || model.definition.xml.name || model.name;
     }
-    // else only model name will be considered for determination | https://github.com/swagger-api/swagger-ui/issues/2577
+    // else only entity name will be considered for determination | https://github.com/swagger-api/swagger-ui/issues/2577
     else {
         name = name || model.name;
     }
@@ -25337,7 +25337,7 @@ SwaggerUi.Views.StatusCodeView = Backbone.View.extend({
     }
 
     responseModelView = new SwaggerUi.Views.SignatureView({model: responseModel, tagName: 'div'});
-    $('.model-signature', this.$el).append(responseModelView.render().el);
+    $('.entity-signature', this.$el).append(responseModelView.render().el);
     return this;
   }
 });}).call(this);
